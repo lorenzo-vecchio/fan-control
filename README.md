@@ -2,6 +2,8 @@
 
 Fans on the QS Bar, and a panel that changes what the kernel is doing with them.
 
+Source and issues: <https://github.com/lorenzo-vecchio/fan-control>
+
 The bar mark shows the fan speed (or the profile, or the hottest sensor - your
 pick) and turns gold when a sensor crosses your warning temperature. Click it and
 the panel opens: the live rpm, the hottest sensors, and four ways to run the
@@ -133,6 +135,12 @@ three profiles and the custom level slider.
 ```
 ryoku plugin validate .
 ryoku plugin add . --bar --yes
+```
+
+Or straight from the repository, the way any user would:
+
+```
+ryoku plugin add https://github.com/lorenzo-vecchio/fan-control --bar --yes
 ```
 
 It lands on the bar and lists under **Community** in QS Bar Settings.
